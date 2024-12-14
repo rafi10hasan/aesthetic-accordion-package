@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "declarationDir": "./dist/types"
+  },
+  "include": [
+    "src/**/*"  // Ensure this matches your file structure
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist"  // Avoid output folder in exclusion
+  ]
+}
