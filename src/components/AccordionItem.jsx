@@ -10,7 +10,7 @@ export const AccordionItem = ({ children, className="", accIndex }) => {
   const { activeIndexes, toggleAccordion } = useAccordion();
   const isActive = activeIndexes.includes(accIndex);
 
-  const itemClass = twMerge("cursor-pointer bg-white mb-2 max-w-[80vw] md:max-w-[40vw] lg:max-w-[36vw] mx-auto shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0] rounded-sm",className);
+  const itemClass = twMerge("cursor-pointer bg-white mb-3 max-w-[80vw] md:max-w-[40vw] lg:max-w-[35vw] mx-auto shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0] rounded-sm",className);
 
 
   // Separate title and content using React children pattern
@@ -19,13 +19,13 @@ export const AccordionItem = ({ children, className="", accIndex }) => {
   const {className:contentClass,children:content} = childrenArray[1].props 
   
   const finalTitleClass = twMerge("text-md",titleClass)
-  const finalContentClass = twMerge("px-3 pb-3",contentClass)
+  const finalContentClass = twMerge("p-3",contentClass)
 
 
   return (
     <div className={itemClass}>
       <div
-        className="px-3 py-3 flex justify-between gap-3"
+        className="p-3 flex justify-between gap-3"
         onClick={() => toggleAccordion(accIndex)}
       >
         <p className={finalTitleClass}>{title}</p>
