@@ -9,8 +9,8 @@ import { useAccordion } from "../hooks/useAccordion";
 export const AccordionItem = ({ children, className="", accIndex }) => {
   const { activeIndexes, toggleAccordion } = useAccordion();
   const isActive = activeIndexes.includes(accIndex);
-  
-  const itemClass = twMerge("cursor-pointer bg-white mb-2 max-w-[80vw] md:max-w-[40vw] lg:max-w-[35vw] mx-auto shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0] rounded-sm",className);
+
+  const itemClass = twMerge("cursor-pointer bg-white mb-2 max-w-[80vw] md:max-w-[40vw] lg:max-w-[36vw] mx-auto shadow-[rgba(99,99,99,0.2)_0px_2px_8px_0] rounded-sm",className);
 
 
   // Separate title and content using React children pattern

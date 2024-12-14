@@ -21,6 +21,13 @@
   ],
   "author": "Rafi Hasan",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafi10hasan/aesthetic-accordion"
+  },
+  "bugs": {
+    "url": "https://github.com/rafi10hasan/aesthetic-accordion/issues"
+  },
   "dependencies": {
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
