@@ -3,6 +3,7 @@ import terser from '@rollup/plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs'; 
 import typescript from 'rollup-plugin-typescript2';
+import postcss from 'rollup-plugin-postcss';
 
 const devMode = process.env.NODE_ENV === 'development';
 console.log(`${devMode ? 'development' : 'production'} mode bundle`);
@@ -33,7 +34,10 @@ export default [
               ['@babel/preset-react', { runtime: 'automatic' }]
             ],
           }),
-          
+          postcss({
+            inject: true, // Inline CSS into JS
+            minimize: true, // Minify CSS
+          }),
       commonjs(),
       terser({
         ecma: 2020,
