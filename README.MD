@@ -1,7 +1,7 @@
 
 # aesthetic-accordion
 
-This is An accordion UI component used to display a list of items, each of which can be expanded or collapsed to reveal or hide associated content.
+This is An accordion UI component used to display a list of items, each of which can be expanded or collapsed to show or hide associated content.
 
 
 ## Authors
